@@ -2,7 +2,6 @@
 
 ## File Synchronizer using command line arguments
 
-**Main Task**
 
 This script keeps two directories synchronized by copying updated or new files from the source directory to the replica directory and removing files from the replica directory that are not present in the source directory. It uses SHA3 hashing to check for file updates and performs hash calculation in parallel to improve performance.
 
