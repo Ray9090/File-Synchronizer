@@ -8,7 +8,7 @@ This script keeps two directories synchronized by copying updated or new files f
 
 ### Functions
 
-**calculate_hash(file_path: str)**
++ **calculate_hash(file_path: str)**
 
 Calculates the SHA3 hash of a file. The file is read in chunks to avoid using too much memory for large files.
 
