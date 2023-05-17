@@ -8,13 +8,13 @@
 
 *Note*
 
-+ The synchronization is one-way, but the replica folder is strictly modified by the exact match of the source file. And instead of replacing all the source file contents, it first checks the file modification condition. If the file does not modify, then there is no need to synchronize the same file. By doing this, it can avoid unnecessary calculations.
++ *The synchronization is one-way, but the replica folder is strictly modified by the exact match of the source file. And instead of replacing all the source file contents, it first checks the file modification condition. If the file does not modify, then there is no need to synchronize the same file. By doing this, it can avoid unnecessary calculations.*
 
-+ I have used SHA3 due to more security reasons. 
++ *I have used SHA3 due to more security reasons.* 
 
-+ I have used the parallel processing method. If the directories are large, walking through them and calculating the hash for each file can take a considerable amount of time. If efficiency is a concern and you have a multicore processor at your disposal, you could consider using parallel processing to walk through the directories and calculate the hashes. This can be achieved using Python's multiprocessing or concurrent.futures modules. Again, this would add considerable complexity to the program.
++ *I have used the parallel processing method. If the directories are large, walking through them and calculating the hash for each file can take a considerable amount of time. If efficiency is a concern and you have a multicore processor at your disposal, you could consider using parallel processing to walk through the directories and calculate the hashes. This can be achieved using Python's multiprocessing or concurrent.futures modules. Again, this would add considerable complexity to the program.*
 
-+ I also handled exceptions at the granular level. Depending on working requirements, the system might want to handle different exceptions in different ways. For example, if a file can't be copied due to a permissions issue, it might want to stop the whole synchronization process, or it might want to skip that file and continue with the others.
++ *I also handled exceptions at the granular level. Depending on working requirements, the system might want to handle different exceptions in different ways. For example, if a file can't be copied due to a permissions issue, it might want to stop the whole synchronization process, or it might want to skip that file and continue with the others.*
 
 
 ### Functions
