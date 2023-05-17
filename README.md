@@ -2,6 +2,7 @@
 
 ## File Synchronizer using command line arguments
 
+> Download the 'folder_sync.py' file and run cmd in the same directory. First, give the source folder path, then the replica folder path, then the synchronization time, and finally, the path where the log file should save. Even if there is no log file, it will create a log file and update with each periodic time.
 
 This script keeps two directories synchronized by copying updated or new files from the source directory to the replica directory and removing files from the replica directory that are not present in the source directory. It uses SHA3 hashing to check for file updates and performs hash calculation in parallel to improve performance.
 
