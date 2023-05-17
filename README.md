@@ -45,3 +45,5 @@ The main function that runs the script. It first gets the user inputs and sets u
 ***Sample Video***
 
 
+https://github.com/Ray9090/File-Synchronizer/assets/58274552/484b38cf-994f-4528-8087-855cbb317045
+
